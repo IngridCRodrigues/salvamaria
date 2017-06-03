@@ -10,7 +10,7 @@
 	<?php include('includes/header-admin.inc'); ?>
 <body class="website">
 	<section>
-	<form  class="gt-form" action="../controllers/certeses_controller.php" method="POST">
+	<form  class="gt-form" action="../controllers/certese_controller.php" method="POST">
 		<label for="tipo">Tipo:</label>
 		<select id="tipo" name="tipo">
         	<option value="FISCALIZACAO">Fiscalização</option>
@@ -20,7 +20,7 @@
         	<option value="NEGATIVA_ENDERECO">Negativa Endedereço</option>
         </select>
 		<label for="data">Data:</label>
-		<input id="data" type="date" name="data">
+		<input id="data" type="text" name="data">
 		<label for="depoimento_usuaria">Depoimento usuaria:</label>
 		<textarea id="depoimento_usuaria" name="depoimento_usuaria"  rows="4">
 		</textarea>
@@ -34,7 +34,7 @@
         	<option value="BAIXO">Baixo</option>
         </select> -->
 
-        <button class = "btn success" type="submit" name="finalizar" value="finalizar">Finalizar</button>
+        <button class = "btn success" type="submit" name="action" value="store">Finalizar</button>
 		</form>
 		</section>
 	</body>
