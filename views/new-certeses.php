@@ -1,19 +1,23 @@
-<?php require_once('heart/pulse.php'); ?>
+<?php require_once('../heart/pulse.php'); ?>
+
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Novo usuário</title>
+	<?php include('includes/head.inc'); ?>
+	<title>Nova certidão</title>
 </head>
-<body>
-	<form action="../controllers/user_controller.php" method="POST">
+	<?php include('includes/header-admin.inc'); ?>
+<body class="website">
+	<section>
+	<form  class="gt-form" action="../controllers/certeses_controller.php" method="POST">
 		<label for="tipo">Tipo:</label>
-		<select id="tipo">
-        	<option value="FISCALIZACAO">FISCALIZACAO</option>
+		<select id="tipo" name="tipo">
+        	<option value="FISCALIZACAO">Fiscalização</option>
         	<option value="RECUSA">Recusa</option>
         	<option value="RETORNO">Retorno</option>
         	<option value="TERMINO">Término</option>
-        	<option value="NEGATIVA_ENDERECO">Negativa End</option>
+        	<option value="NEGATIVA_ENDERECO">Negativa Endedereço</option>
         </select>
 		<label for="data">Data:</label>
 		<input id="data" type="date" name="data">
@@ -23,14 +27,15 @@
 		<label for="depoimento_agressor">Depoimento agressor:</label>
 		<textarea id="depoimento_agressor" name="depoimento_agressor"  rows="4">
 		</textarea>
-		<label for="grau_risco">Grau de risco:</label>
+	<!-- 	<label for="grau_risco">Grau de risco:</label>
 		<select id="grau_risco">
         	<option value="ALTO">Alto</option>
         	<option value="MEDIO">Médio</option>
         	<option value="BAIXO">Baixo</option>
-        </select>
+        </select> -->
 
-        <button type="submit" name="finalizar" value="finalizar">Finalizar</button>
+        <button class = "btn success" type="submit" name="finalizar" value="finalizar">Finalizar</button>
 		</form>
+		</section>
 	</body>
 </html>
