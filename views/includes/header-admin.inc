@@ -11,6 +11,7 @@
       <a href="users.php"><li class="active">Mulheres</li></a>
       <a href="layouts"><li class="active">Gráficos</li></a>
       <a href="admins.php"><li class="active">PMS</li></a>
+      <a href="admins.php"><li class="active">Certidão</li></a>
     </ul>
   </nav>
 </header>

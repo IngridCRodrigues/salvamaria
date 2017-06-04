@@ -1,3 +1,8 @@
+<div class="top-bar">	
+	<a class="btn add">Adicionar Certidão</a>
+	<a class="btn add">Relatório de Serviço</a>
+</div>
+
 <form class="gt-form small" action="../controllers/user_controller.php<?php Prints::it($user, 'id', 'get/id');  ?>" method="POST">
 
 <label for="processo">Processo:</label>
