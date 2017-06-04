@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 04-Jun-2017 às 10:17
+-- Generation Time: 04-Jun-2017 às 11:11
 -- Versão do servidor: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -19,6 +19,21 @@ SET time_zone = "+00:00";
 --
 -- Database: `salvamaria`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `admins`
+--
+
+CREATE TABLE `admins` (
+  `id` int(11) NOT NULL,
+  `matricula` varchar(255) DEFAULT NULL,
+  `senha` varchar(255) DEFAULT NULL,
+  `nome` varchar(255) DEFAULT NULL,
+  `createdAt` date DEFAULT NULL,
+  `updateAt` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -79,20 +94,17 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `nome`, `processo`, `createdAt`, `updatedAt`, `rua`, `bairro`, `numero`, `cidade`, `complemento`, `endereco_visita`, `ponto_referencia`, `telefone`, `turno_visita`, `estado_civil`, `filhos`, `filhos_com_agressor`, `escolaridade`, `etnia`, `idade`, `religiao`, `profissao`, `trabalha`, `ultimo_emprego`, `local_trabalho`, `renda`, `responsavel_sustento`) VALUES
-(1, 'teste', 'teste', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(2, 'ingrid', 'ingrid', '2017-06-04', '2017-06-04', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(3, 'ingrid', 'ingrid', '2017-06-04', '2017-06-04', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(4, 'retretert', 'ingrid', '2017-06-04', '2017-06-04', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(5, 'Ingrid Cruz Rodrigues', 'ingrid', '2017-06-04', '2017-06-04', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(6, 'GDGFDGD', 'ingrid', '2017-06-04', '2017-06-04', 'GDGDG', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(7, 'Ingrid Cruz Rodrigues', '43244234', '2017-06-04', '2017-06-04', 'Avenida Cardeal da Silva', 'sad', 534553, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(8, 'hdf', 'sem numero vai?', '2017-06-04', '2017-06-04', 'hdfh', 'hdfhd', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(9, '2222', 'sem numero vai?', '2017-06-04', '2017-06-04', 'hdfh', 'hdfhd', 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(10, 'Ingrid Cruz Rodrigues', 'ingrid', '2017-06-04', '2017-06-04', 'Avenida Cardeal da Silva', 'sad', 0, 'Salvador', 'fsfds', 'Avenida Cardeal da Silva', 'dsfs', '75981100645', 'fsf', 'bahia', '2', '2', '2', '2', 1, 'fsf', '2', 'fsf', 'fsf', 'Salvador', '2', '2');
+(11, 'Ingrid Cruz Rodrigues', 'mudei', '2017-06-04', '2017-06-04', 'dsf', 'sad', 424, 'Salvador', 'dsf', 'fdf', 'fsf', 'fsf', 'fsfs', 'fsfs', 'uuuuuu', 'uuuuuuuu', 'uuuuuu', 'uuuuuuuu', 1, 'uuuuuuu', 'uuuuuuu', 'uuuuuu', 'uuuuuuu', 'u', 'uu', 'uuu');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admins`
+--
+ALTER TABLE `admins`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `certidoes`
@@ -112,10 +124,15 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `admins`
+--
+ALTER TABLE `admins`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- Constraints for dumped tables
 --

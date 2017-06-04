@@ -19,7 +19,7 @@
         <tbody class="text-center">
         <?php foreach($users as $user):?>
             <tr>
-                <td><?php Prints::it($user, 'name'); ?></td>
+                <td><?php Prints::it($user, 'nome'); ?></td>
                 <td><?php Prints::it($user, 'bairro'); ?></td>
                 <td>
                     <a class="" href="edit-user.php<?php Prints::it($user, 'id', 'get/id');  ?>">Editar</a>
