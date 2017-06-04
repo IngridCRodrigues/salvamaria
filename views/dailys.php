@@ -9,6 +9,10 @@
 <body class="panel">
     <?php include('includes/header-admin.inc'); ?>
 <section>
+    <div class="top-bar">
+    <h1>Diário</h1>
+    <a href="new-daily.php" class="btn sucess">Adicionar relato</a>
+    </div>
     <table class="gt-table striped hovered">
         <thead>
             <tr>    

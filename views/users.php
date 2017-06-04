@@ -8,6 +8,10 @@
 <body class="panel">
     <?php include('includes/header-admin.inc'); ?>
 <section>
+    <div class="top-bar">
+    <h1>Mulheres da Ronda</h1>
+    <a href="new-user.php" class="btn sucess">Adicionar mulher</a>
+    </div>
     <table class="gt-table striped hovered">
         <thead>
             <tr>
