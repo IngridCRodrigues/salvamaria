@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/gaintime.min.css" media ="screen" title="no title">
   </head>
   <body>
-    <h1>Fique focado, e vai vencer no final.</h1>
+    <h1></h1>
     <script type="text/javascript" src="js/gaintime.min.js"></script>
   </body>
 </html>

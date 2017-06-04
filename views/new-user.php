@@ -10,8 +10,7 @@
 <label for="nome">Nome:</label>
 <input id="nome" type="text" name="nome">
 <label for="endereco">Endereco:</label>
-<input id="endereco" type="text" name="endereco">
-	
+<input id="endereco" type="text" name="endereco">	
 </form>
 </body>
 </html>
