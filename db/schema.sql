@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 04-Jun-2017 às 12:58
+-- Generation Time: 04-Jun-2017 às 13:01
 -- Versão do servidor: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -38,19 +38,19 @@ CREATE TABLE `admins` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `certidoes`
+-- Estrutura da tabela `certeses`
 --
 
-CREATE TABLE `certidoes` (
+CREATE TABLE `certeses` (
   `id` int(11) NOT NULL,
-  `tipo` enum('FISCALIZACAO','RECUSA','RETORNO','TERMINO','NEGATIVA_ENDERECO') NOT NULL,
-  `data` datetime NOT NULL,
-  `testemunha` varchar(100) NOT NULL,
-  `depoimento_usuaria` mediumtext NOT NULL,
+  `tipo` varchar(255) DEFAULT NULL,
+  `data` date DEFAULT NULL,
+  `testemunha` varchar(100) DEFAULT NULL,
+  `depoimento_usuaria` mediumtext,
   `depoimento_agressor` mediumtext,
-  `users_id` int(11) NOT NULL,
-  `createdAt` date NOT NULL,
-  `updatedAt` date NOT NULL
+  `users_id` int(11) DEFAULT NULL,
+  `createdAt` date DEFAULT NULL,
+  `updatedAt` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -130,9 +130,9 @@ ALTER TABLE `admins`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `certidoes`
+-- Indexes for table `certeses`
 --
-ALTER TABLE `certidoes`
+ALTER TABLE `certeses`
   ADD PRIMARY KEY (`id`),
   ADD KEY `fk_certidoes_users_idx` (`users_id`);
 
@@ -158,6 +158,11 @@ ALTER TABLE `users`
 ALTER TABLE `admins`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `certeses`
+--
+ALTER TABLE `certeses`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `dailys`
 --
 ALTER TABLE `dailys`
@@ -172,9 +177,9 @@ ALTER TABLE `users`
 --
 
 --
--- Limitadores para a tabela `certidoes`
+-- Limitadores para a tabela `certeses`
 --
-ALTER TABLE `certidoes`
+ALTER TABLE `certeses`
   ADD CONSTRAINT `fk_certidoes_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
