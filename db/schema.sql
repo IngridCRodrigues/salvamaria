@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 04-Jun-2017 às 11:11
+-- Generation Time: 04-Jun-2017 às 12:58
 -- Versão do servidor: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -52,6 +52,29 @@ CREATE TABLE `certidoes` (
   `createdAt` date NOT NULL,
   `updatedAt` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `dailys`
+--
+
+CREATE TABLE `dailys` (
+  `id` int(11) NOT NULL,
+  `data` varchar(255) DEFAULT NULL,
+  `descricao` text,
+  `user_id` int(11) DEFAULT NULL,
+  `updatedAt` date DEFAULT NULL,
+  `createdAt` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `dailys`
+--
+
+INSERT INTO `dailys` (`id`, `data`, `descricao`, `user_id`, `updatedAt`, `createdAt`) VALUES
+(1, '2017-05-31', 'oi gente vadasdsdasdasdasd', NULL, '2017-06-04', NULL),
+(2, '2017-06-07', 'editouuuuuuuuuu', NULL, '2017-06-04', '2017-06-04');
 
 -- --------------------------------------------------------
 
@@ -114,6 +137,12 @@ ALTER TABLE `certidoes`
   ADD KEY `fk_certidoes_users_idx` (`users_id`);
 
 --
+-- Indexes for table `dailys`
+--
+ALTER TABLE `dailys`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -128,6 +157,11 @@ ALTER TABLE `users`
 --
 ALTER TABLE `admins`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `dailys`
+--
+ALTER TABLE `dailys`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `users`
 --
