@@ -8,7 +8,8 @@
   <nav>
     <ul>
       <a href="."><li>Home</li></a>
-      <a href="layouts"><li class="active">Mulheres</li></a>
+      <a href="users.php"><li class="active">Mulheres</li></a>
+      <a href="layouts"><li class="active">Gráficos</li></a>
     </ul>
   </nav>
 </header>
