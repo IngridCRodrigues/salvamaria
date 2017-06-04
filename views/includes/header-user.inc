@@ -8,10 +8,10 @@
   <nav>
     <ul>
       <a href="."><li>Home</li></a>
-      <a href="users.php"><li class="active">Mulheres</li></a>
-      <a href="layouts"><li class="active">Gráficos</li></a>
-      <a href="admins.php"><li class="active">PMS</li></a>
-      <a href="admins.php"><li class="active">Certidão</li></a>
+      <a href="new-daily.php"><li class="active">Diário das Marias</li></a>
+      <a href=""><li class="active">Próximos eventos</li></a>
+      <a href=""><li class="active">Contatos</li></a>
+      <a href=""><li class="active">Rede de apoio</li></a>
     </ul>
   </nav>
 </header>

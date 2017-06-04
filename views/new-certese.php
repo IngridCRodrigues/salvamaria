@@ -1,6 +1,4 @@
 <?php require_once('../heart/pulse.php'); ?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,8 +15,7 @@
         	<option value="RECUSA">Recusa</option>
         	<option value="RETORNO">Retorno</option>
         	<option value="TERMINO">Término</option>
-        	<option value="NEGATIVA_ENDERECO">Negativa Endedereço</option>
-        </select>
+        	<option value="NEGATIVA_ENDERECO">Negativa Endereço</option>
 		<label for="data">Data:</label>
 		<input id="data" type="text" name="data">
 		<label for="depoimento_usuaria">Depoimento usuaria:</label>
@@ -27,13 +24,14 @@
 		<label for="depoimento_agressor">Depoimento agressor:</label>
 		<textarea id="depoimento_agressor" name="depoimento_agressor"  rows="4">
 		</textarea>
-	<!-- 	<label for="grau_risco">Grau de risco:</label>
+		<label for="grau_risco">Grau de risco:</label>
 		<select id="grau_risco">
         	<option value="ALTO">Alto</option>
         	<option value="MEDIO">Médio</option>
         	<option value="BAIXO">Baixo</option>
-        </select> -->
-
+        </select>
+        <button class="btn success" type="submit" name="action" value="store">Finalizar</button>
+        </select>
         <button class = "btn success" type="submit" name="action" value="store">Finalizar</button>
 		</form>
 		</section>

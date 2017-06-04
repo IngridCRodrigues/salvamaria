@@ -5,3 +5,8 @@ body {
 textarea {
 	resize: none;
 }
+
+.btn:hover {	
+	background-color: #9b59b6;
+	color: #FFF;
+}
