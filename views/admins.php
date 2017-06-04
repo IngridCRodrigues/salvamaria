@@ -21,7 +21,7 @@
             </tr>
         </thead>
         <tbody class="text-center">
-        <?php foreach($admins as $admin): ?>
+        <?php foreach($admins as $admin):?>
             <tr>
                 <td><?php Prints::it($admin, 'nome'); ?></td>
                 <td><?php Prints::it($admin, 'matricula'); ?></td>

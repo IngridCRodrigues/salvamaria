@@ -1,4 +1,3 @@
-<?php require_once('../heart/pulse.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,20 +15,18 @@
         <thead>
             <tr>
                 <th>Nome</th>
-                <th>Bairro</th>
+                <th>Cidade</th>
                 <th>Ações</th>
             </tr>
         </thead>
-        <tbody class="text-center">
-        <?php foreach($users as $user):?>
+        <tbody>
             <tr>
-                <td><?php Prints::it($user, 'nome'); ?></td>
-                <td><?php Prints::it($user, 'bairro'); ?></td>
+                <td>Maria</td>
+                <td>Salvador</td>
                 <td>
-                    <a class="" href="edit-user.php<?php Prints::it($user, 'id', 'get/id');  ?>">Editar</a>
+                    <a href="">Editar</a>
                 </td>
             </tr>
-        <?php endforeach; ?>
         </tbody>
     </table>
 </section>

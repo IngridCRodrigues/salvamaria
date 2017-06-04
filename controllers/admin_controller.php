@@ -11,3 +11,5 @@
     $obj = new Admin_controller();
     $admins = $obj->loadAll();
     $admin = $obj->one();
+
+    }
