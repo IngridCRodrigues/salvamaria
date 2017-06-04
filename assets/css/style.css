@@ -2,7 +2,7 @@ body {
 	background-color: #9b59b6;
 }
 
-textarea {
+form textarea {
 	resize: none;
 }
 

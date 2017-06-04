@@ -31,7 +31,7 @@
         	<option value="MEDIO">Médio</option>
         	<option value="BAIXO">Baixo</option>
         </select>
-        <button type="submit" name="action" value="store" class="btn">Finalizar</button>
+        <button type="submit" name="action" value="store" class="btn">Gerar código</button>
 		</form>
 		</section>
 	</body>

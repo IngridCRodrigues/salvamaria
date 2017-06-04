@@ -7,11 +7,11 @@
   </label>
   <nav>
     <ul>
-      <a href="." class="active"><li>Home</li></a>
-      <a href="users.php"><li class="active">Mulheres</li></a>
-      <a href="graphics.php"><li class="active">Gráficos</li></a>
+      <a href="index.php" class="active"><li>Home</li></a>
+      <a href="users.php"><li class="active">Atendidas</li></a>
       <a href="admins.php"><li class="active">PMS</li></a>
       <a href="certeses.php"><li class="active">Certidões</li></a>
+      <a href="graphics.php"><li class="active">Gráficos</li></a>
       <a href="events-admin.php"><li class="active">Eventos</li></a>
     </ul>
   </nav>

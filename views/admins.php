@@ -16,7 +16,7 @@
         <thead>
             <tr>
                 <th>Nome</th>
-                <th>Bairro</th>
+                <th>Matricula</th>
                 <th>Ações</th>
             </tr>
         </thead>

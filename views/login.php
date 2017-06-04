@@ -5,13 +5,15 @@
     <?php include('includes/head.inc'); ?>
 </head>
 <body class="panel">
-    <?php include('includes/header-admin.inc'); ?>
 <section>
-    <h2>Bem vinda(o) ao Salva Maria!</h2>
-    <h1></h1>
+    <h2>Login</h2>
+    <form class="gt-form small">
+    	<input type="" name="" placeholder="Identificador">
+    	<input type="" name="" placeholder="Senha">
+    	<button>Entrar</button>
+    </form>
   </section>
     <script type="text/javascript" src="../vendors/gainTime-2.1.2/js/gaintime.min.js"></script>
-    <script type="text/javascript" src="../../vendors/gainTime-2.1.2/js/gaintime.min.js"></script>
   </body>
 </html>
         

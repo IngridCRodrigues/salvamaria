@@ -7,11 +7,11 @@
   </label>
   <nav>
     <ul>
-      <a href="." class="active"><li>Home</li></a>
+      <a href="index-user.php" class="active"><li>Home</li></a>
       <a href="new-daily.php"><li class="active">Diário das Marias</li></a>
       <a href="events.php"><li class="active">Próximos eventos</li></a>
       <a href="contacts.php"><li class="active">Contatos</li></a>
-      <a href=""><li class="active">Rede de apoio</li></a>
+      <a href="support.php"><li class="active">Rede de apoio</li></a>
     </ul>
   </nav>
 </header>

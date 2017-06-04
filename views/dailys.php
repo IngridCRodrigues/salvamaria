@@ -10,8 +10,7 @@
     <?php include('includes/header-user.inc'); ?>
 <section>
     <div class="top-bar">
-    <h1>Diário</h1>
-    <a href="new-daily.php" class="btn sucess">Adicionar relato</a>     
+    <h1>Diário</h1>    
     <a  class="btn sucess">Exportar PDF</a>
     </div>
     <table class="gt-table striped hovered">
