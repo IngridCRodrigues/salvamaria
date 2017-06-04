@@ -9,4 +9,17 @@ textarea {
 .btn:hover {	
 	background-color: #9b59b6;
 	color: #FFF;
+	text-decoration: none;
+}
+
+.asa {
+	width: 200px;
+}
+
+.img-graphic {
+	width: 400px;
+}
+
+.gt-top-menu li.active {
+	border-color: #9b59b6; 
 }

@@ -6,7 +6,7 @@
 	<?php include('includes/head.inc'); ?>
 	<title>Novo administrador</title>
 </head>
-<body>
+<body class= "panel">
 	<?php include('includes/header-admin.inc'); ?>
 <section>
 <?php include('includes/admins.inc'); ?>

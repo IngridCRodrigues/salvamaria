@@ -7,11 +7,12 @@
     <title>Mulheres</title>
 </head>
 <body class="panel">
-    <?php include('includes/header-admin.inc'); ?>
+    <?php include('includes/header-user.inc'); ?>
 <section>
     <div class="top-bar">
     <h1>Diário</h1>
-    <a href="new-daily.php" class="btn sucess">Adicionar relato</a>
+    <a href="new-daily.php" class="btn sucess">Adicionar relato</a>     
+    <a  class="btn sucess">Exportar PDF</a>
     </div>
     <table class="gt-table striped hovered">
         <thead>
@@ -27,7 +28,7 @@
                 <td><?php Prints::it($daily, 'data'); ?></td>
                 <td><?php Prints::it($daily, 'descricao'); ?></td>
                 <td>
-                    <a class="" href="edit-daily.php<?php Prints::it($daily, 'id', 'get/id');  ?>">Editar</a>
+                    <a class="action danger clean" href="edit-daily.php<?php Prints::it($daily, 'id', 'get/id');  ?>">Visualisar</a>
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -35,4 +36,5 @@
     </table>
 </section>
 </body>
+<script type="text/javascript" src="../vendors/gainTime-2.1.2/js/gaintime.min.js"></script>
 </html>

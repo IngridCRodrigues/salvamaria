@@ -27,7 +27,7 @@
                 <td><?php Prints::it($certese, 'tipo'); ?></td>
                 <td><?php Prints::it($certese, 'data'); ?></td>
                 <td>
-                    <a class="" href="edit-certese.php<?php Prints::it($certese, 'id', 'get/id');  ?>">Editar</a>
+                    <a class="action success clean" href="edit-certese.php<?php Prints::it($certese, 'id', 'get/id');  ?>">Visualizar</a>
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -35,4 +35,5 @@
     </table>
 </section>
 </body>
+<script type="text/javascript" src="../vendors/gainTime-2.1.2/js/gaintime.min.js"></script>
 </html>

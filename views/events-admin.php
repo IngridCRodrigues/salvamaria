@@ -1,35 +1,38 @@
 <?php require_once('../heart/pulse.php'); ?>
+<?php $contexts = ['events']; ?>
 <!DOCTYPE html>
 <html>
 <head>
     <?php include('includes/head.inc'); ?>
-    <title>Mulheres</title>
+    <title>Eventos</title>
 </head>
 <body class="panel">
     <?php include('includes/header-admin.inc'); ?>
 <section>
     <div class="top-bar">
-    <h1>Mulheres da Ronda</h1>
-    <a href="new-user.php" class="btn sucess">Adicionar mulher</a>
+    <h1>Próximos eventos</h1>
+    <a href="new-event.php" class="btn sucess">Adicionar Evento</a>
     </div>
     <table class="gt-table striped hovered">
         <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Bairro</th>
+            <tr>    
+                <th>Evento</th>
+                <th>Descrição</th>
+                <th>Data</th>
                 <th>Ações</th>
             </tr>
         </thead>
         <tbody class="text-center">
-        <?php foreach($users as $user):?>
             <tr>
-                <td><?php Prints::it($user, 'nome'); ?></td>
-                <td><?php Prints::it($user, 'bairro'); ?></td>
+                <td>Festa1</td>
+                <td>Desdesdesdes desd</td>
+                <td>12/12/1212</td>
                 <td>
-                    <a class="action danger clean" href="edit-user.php<?php Prints::it($user, 'id', 'get/id');  ?>">Editar</a>
+                    <a href="" class="action  clean">Editar</a>
+                    <a href="" class="action danger clean">Excluir</a>
+                    <a href="" class="action  clean">Ver confirmações</a>
                 </td>
             </tr>
-        <?php endforeach; ?>
         </tbody>
     </table>
 </section>

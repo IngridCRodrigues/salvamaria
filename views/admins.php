@@ -26,7 +26,7 @@
                 <td><?php Prints::it($admin, 'nome'); ?></td>
                 <td><?php Prints::it($admin, 'matricula'); ?></td>
                 <td>
-                    <a class="" href="edit-admin.php<?php Prints::it($admin, 'id', 'get/id');  ?>">Editar</a>
+                    <a class="action danger clean" href="edit-admin.php<?php Prints::it($admin, 'id', 'get/id');  ?>">Editar</a>
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -34,4 +34,5 @@
     </table>
 </section>
 </body>
+<script type="text/javascript" src="../../vendors/gainTime-2.1.2/js/gaintime.min.js"></script>
 </html>

@@ -10,7 +10,7 @@
     <h2>Bem vinda(o) ao Salva Maria!</h2>
     <h2>Relate aqui as ocorrencias do seu dia-a-dia.</h2>
   </section>
-    <script type="text/javascript" src="js/gaintime.min.js"></script>
+    <script type="text/javascript" src="../vendors/gainTime-2.1.2/js/gaintime.min.js"></script>
   </body>
 </html>
         

@@ -1,4 +1,4 @@
-<form class="gt-form small" action="../controllers/daily_controller.php<?php Prints::it($daily, 'id', 'get/id');  ?>" method="POST">
+<form class="gt-form" action="../controllers/daily_controller.php<?php Prints::it($daily, 'id', 'get/id');  ?>" method="POST">
 
 <label for="processo">Data:</label>
 <input id="processo" type="date" name="data" value="<?php if($daily) echo $daily->data; ?>">

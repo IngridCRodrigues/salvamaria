@@ -7,7 +7,7 @@
 	<title>Novo Diário</title>
 </head>
 <body class="panel">
-	<?php include('includes/header-admin.inc'); ?>
+	<?php include('includes/header-user.inc'); ?>
 <section>
 	<div class="top-bar">
 		<h1>O que aconteceu?</h1>
@@ -16,4 +16,5 @@
 	
 </section>
 </body>
+<script type="text/javascript" src="../vendors/gainTime-2.1.2/js/gaintime.min.js"></script>
 </html>
