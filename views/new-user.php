@@ -4,7 +4,7 @@
 <html>
 <head>
 	<?php include('includes/head.inc'); ?>
-	<title>Novo usuário</title>
+	<title>Nova usuária</title>
 </head>
 <body>
 	<?php include('includes/header-admin.inc'); ?>
