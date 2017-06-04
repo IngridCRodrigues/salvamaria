@@ -4,7 +4,7 @@
 
     class Daily_controller extends \Controller\Base {
         public $fillneeded = ['data' => 'data', 'descricao' => 'descricao'];
-        public $location = '../views/dailys.php';
+        public $location = '../views/index-user.php';
 
     }
    

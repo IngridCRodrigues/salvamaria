@@ -15,7 +15,7 @@
         	<option value="RECUSA">Recusa</option>
         	<option value="RETORNO">Retorno</option>
         	<option value="TERMINO">Término</option>
-        	<option value="NEGATIVA_ENDERECO">Negativa Endedereço</option>
+        	<option value="NEGATIVA_ENDERECO">Negativa Endereço</option>
         </select>
 		<label for="data">Data:</label>
 		<input id="data" type="text" name="data">
@@ -31,7 +31,7 @@
         	<option value="MEDIO">Médio</option>
         	<option value="BAIXO">Baixo</option>
         </select>
-        <button class = "btn success" type="submit" name="action" value="store">Finalizar</button>
+        <button class="btn success" type="submit" name="action" value="store">Finalizar</button>
 		</form>
 		</section>
 	</body>
