@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Minha página</title>
-    <link rel="stylesheet" href="css/gaintime.min.css" media ="screen" title="no title">
-  </head>
-  <body>
-    <h1></h1>
+    <title>Salva Maria</title>
+    <?php include('includes/head.inc'); ?>
+</head>
+<body class="panel">
+    <?php include('includes/header-admin.inc'); ?>
+<section>
+    <h2>Bem vinda(o) ao Salva Maria!</h2>
+  </section>
     <script type="text/javascript" src="js/gaintime.min.js"></script>
   </body>
 </html>
