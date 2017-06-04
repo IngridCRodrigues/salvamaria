@@ -1,4 +1,4 @@
-<?php $context = "users"; ?>
+<?php $contexts = ['users']; ?>
 
 <?php require_once('../heart/pulse.php'); ?>
 
