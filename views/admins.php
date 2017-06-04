@@ -1,8 +1,9 @@
+<?php require_once('../heart/pulse.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
     <?php include('includes/head.inc'); ?>
-    <title>Mulheres</title>
+    <title>Admins</title>
 </head>
 <body class="panel">
     <?php include('includes/header-admin.inc'); ?>
@@ -11,18 +12,20 @@
         <thead>
             <tr>
                 <th>Nome</th>
-                <th>Cidade</th>
+                <th>Bairro</th>
                 <th>Ações</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="text-center">
+        <?php foreach($admins as $admin):?>
             <tr>
-                <td>Maria</td>
-                <td>Salvador</td>
+                <td><?php Prints::it($admin, 'nome'); ?></td>
+                <td><?php Prints::it($admin, 'matricula'); ?></td>
                 <td>
-                    <a href="">Editar</a>
+                    <a class="" href="edit-admin.php<?php Prints::it($admin, 'id', 'get/id');  ?>">Editar</a>
                 </td>
             </tr>
+        <?php endforeach; ?>
         </tbody>
     </table>
 </section>
